@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "LTT Unclickbaiter",
+  "description": "Use translated LTT video titles from @LTTtranslator on Twitter and replace them on YouTube",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "dist/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["dist/js/content_scripts.js"],
+      "css": ["dist/css/main.css"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "http://*/*"
+  ],
+  "web_accessible_resources": [
+    "dist/js/*",
+    "dist/css/*"
+  ]
+}

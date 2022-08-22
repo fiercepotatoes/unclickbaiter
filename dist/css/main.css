@@ -1,0 +1,15 @@
+.ltt-sponsored {
+  background: green;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .5);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  left: 0;
+  padding: 2px 4px;
+  position: absolute;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 0 black;
+  text-transform: uppercase;
+  top: 0;
+  white-space: nowrap;
+}
